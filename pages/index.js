@@ -22,17 +22,30 @@ export default function Home() {
       </header>
 
 
-      <main className={layoutGuide("w-auto mx-20 mt-2 ",false)}>
+      <main className={layoutGuide("mx-20 mt-2 ",false)}>
+        <form className={layoutGuide('w-7/8 grid grid-rows-4 grid-cols-4 gap-1')}>
+          <legend className={layoutGuide('row-span-1 col-span-4 self-center text-center')}>Create Cookie Stand</legend>
 
-        <form className={layoutGuide("grid grid-cols-7 grid-rows-6 col-gap-4 bg-green-300 rounded ")} name='standInfo'>
-          <legend className={layoutGuide('row-start-1 row-span-1 col-start-1 col-span-7 text-center',false)}>Create Cookie Stand</legend>
-          
-          <label className={layoutGuide('row-start-2 row-span-1 col-start-1 col-end-2 '),false} for="location">Location:</label>
-          <input className={layoutGuide( 'row-start-2 row-span-1 col-start-2 col-end-8 '),false} type="text" name="location"></input>
-            
+          <label for='location' className={layoutGuide('row-start-2 col-start-1 ml-2  ')}>Location:</label> 
+          <input name='location' type='text' className={layoutGuide('row-start-2 col-start-2 col-span-2 self-end w-5/6 pr-3 mx-5')}></input>
 
+          <label for='minCust' className={layoutGuide('row-start-3 col-start-1')}>Minimum Customers per Hour</label>
+          <input name='minCust' type='text' className={layoutGuide(' row-start-4 col-start-1')}></input>
           
+
+          <label for='maxCust' className={layoutGuide('row-start-3 col-start-2 ')}>Maximum Customers per Hour</label>
+          <input name='maxCust' type='text' className={layoutGuide('row-start-4 col-start-2')}></input>
+          
+
+          <label for='avgCookie' className={layoutGuide('row-start-3 col-start-3 ')}>Average Cookies per Sale</label>
+          <input name='avgCookie' type='text' className={layoutGuide('row-start-4 col-start-3')}></input>
+          
+          <button type='submit' className={layoutGuide('row-start-3 col-start-4')}>Create</button>
+          
+
         </form>
+        
+      
 
         <p className="pl-100">
           table coming soon!
