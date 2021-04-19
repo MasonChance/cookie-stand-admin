@@ -3,7 +3,7 @@
 
 
 
-const layoutGuide = function (tailwind, dev=true){
+const layoutGuide = function (tailwind, dev=false){
     if (dev === true){
         return ('border-2 border-dotted border-red-500' + tailwind)  
     } else {
