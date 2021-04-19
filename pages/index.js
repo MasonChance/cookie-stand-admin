@@ -103,11 +103,12 @@ export default function CookieStandAdmin() {
       <table className={layoutGuide('bg-green-200')} >
         <thead>
           <tr>
+            <th>Location</th>
             { props.hourly.map(hr=><th>{hr}</th>) }
           </tr>
         </thead>
         <tbody>  
-          {reports.map(stand => <tr key={stand.location}>{stand.hourlySales.map(sold=><td>{sold}</td>)}</tr>)}
+          {reports.map(stand => <tr key={stand.location}><td>{stand.location}</td>{stand.hourlySales.map(sold=><td>{sold}</td>)}</tr>)}
           
         </tbody> 
       </table>
