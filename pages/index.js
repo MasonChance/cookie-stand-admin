@@ -1,30 +1,22 @@
-import Head from 'next/head'
 import { stringify } from 'postcss'
-import { layoutGuide } from '../utility'
-import  Header  from '../components/header'
-import CreateStandForm from '../components/form-new-stand'  // FIXME: import not maintaining state when imported
+import CookieStandAdmin from '../components/cookie-stand-admin'
+import LoginForm from '../components/login-form'
 
 
-export default function CookieStandAdmin() {
+
+export default function Home() {
+  /* # Create State for User
+        # logged in (authenticated)
+        # not logged in (not authenticated)
+      if logged in: 
+        return <Home> component
+      if not logged in: 
+        return <LoginPage> compoenent
+      
 
 
-  
-  return (
-    <div className={layoutGuide('')}>
-      <Head>
-        <title>Cookie Stand Admin</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-    
-      <Header title='Cookie Stand Admin' />
-
-
-      <main className={layoutGuide("mx-20 mt-2 ",false)}>
-        <CreateStandForm />
-
-      </main>
-    </div>
-  )
+  */
+ 
 };
 
 
