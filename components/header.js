@@ -10,7 +10,7 @@ function Header(props){
             <nav className={layoutGuide('col-start-2 col-span-1 self-end')}>
 
                 <Link href="/overview">
-                <a className={layoutGuide('border-1 border-gray-300 rounded-sm bg-green-500')}>overview</a>
+                    <a className={layoutGuide('border-1 border-gray-300 rounded-sm bg-green-500')}>Overview</a>
                 </Link>
             </nav>
         </header>
