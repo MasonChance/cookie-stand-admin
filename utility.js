@@ -11,6 +11,4 @@ const layoutGuide = function (tailwind, dev=false){
     }
     };
 
-
-
 module.exports = {'layoutGuide' : layoutGuide};
